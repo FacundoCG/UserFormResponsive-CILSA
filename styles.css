@@ -41,7 +41,7 @@ input:hover {
     border: 2px solid #fff;
 }
 
-.high-contrast button, button:hover {
+.high-contrast button{
     background-color: yellow; 
     color: black; 
     border: 2px solid #fff; 
