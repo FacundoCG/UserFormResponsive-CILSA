@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Registrar usuario</title>
+</head>
+<body>
+    <button id="contrastToggle" class="toRight">Alto contraste</button><br>
+
+    <h1 class="titulo kanit-bold">Registrar usuario</h1>
+
+    <form class="customForm center" action="usuario_registrado.html" onsubmit="return validacion()">
+        <p class="warning">Los campos con (*) son obligatorios</p>
+
+        <label class="labelField" for="username">Nombre de usuario <span class="warning">*</span></label>
+        <input type="text" id="username" name="username" placeholder="Introduzca su nombre de usuario">
+        <span id="usernameError" class="error-message"></span><br><br>
+
+        <label class="labelField" for="email">Correo electrónico <span class="warning">*</span></label>
+        <input type="email" id="email" name="email" placeholder="Introduzca su correo electrónico">
+        <span id="emailError" class="error-message"></span><br><br>
+
+        <label class="labelField" for="dateOfBirth">Fecha de nacimiento <span class="warning">*</span></label>
+        <input type="date" id="dateOfBirth" name="dateOfBirth" placeholder="Introduzca su fecha de nacimiento">
+        <span id="dateOfBirthError" class="error-message"></span><br><br>
+
+        <label class="labelField" for="password">Contraseña <span class="warning">*</span></label>
+        <input type="password" id="password" name="password" placeholder="Introduzca su contraseña">
+        <span id="passwordError" class="error-message"></span><br><br>
+
+        <label class="labelField" for="passwordRepeated">Repetir contraseña <span class="warning">*</span></label>
+        <input type="password" id="passwordRepeated" name="passwordRepeated" placeholder="Introduzca su contraseña nuevamente">
+        <span id="passwordRepeatedError" class="error-message"></span><br><br>
+
+        <div class="center">
+            <input type="submit" value="Registrarse">
+        </div>
+    </form>
+
+    <script src="code.js"></script>
+</body>
+</html>
